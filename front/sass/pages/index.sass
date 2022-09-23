@@ -274,7 +274,7 @@ body
   &__image
     position: absolute
     left: 50%
-    top: -72px
+    top: -111px
     transform: translateX(-50%)
     display: flex
     flex-direction: column
@@ -307,7 +307,7 @@ body
     font-family: $font-suisse-semb
     color: $blue
     display: inline-block
-    padding: 31px 105px 29px
+    padding: 31px 64px 29px
     font-size: 24px
     line-height: 31px
     letter-spacing: 0.08em
@@ -317,13 +317,14 @@ body
     transition: background-color .3s ease
     text-transform: uppercase
     position: relative
+    top: -6px
     &:hover
       background: $green-hover
     &::before
       content: ''
       position: absolute
       left: -210px
-      top: -54px
+      top: -48px
       width: 180px
       height: 156px
       background: url("../img/wing-left.png") no-repeat 50% 0/contain
@@ -333,54 +334,88 @@ body
       width: 180px
       height: 156px
       right: -210px
-      top: -54px
+      top: -48px
       background: url("../img/wing-left.png") no-repeat 50% 0/contain
       transform: scaleX(-1)
   &__text
     position: relative
     z-index: 10
+    top: -20px
     display: flex
     flex-direction: column
     align-items: center
     &-top
       font-family: $font-suisse-bold
-      font-size: 128px
-      line-height: 125px
+      font-size: 96px
+      line-height: 96px
       letter-spacing: 0.02em
       text-transform: uppercase
       color: $gray
-      margin: 0 170px 6px 0
-    &-center
-      font-family: $font-wulkan
-      font-size: 128px
-      line-height: 125px
-      letter-spacing: 0.02em
-      text-transform: uppercase
-      color: $magenta
-      margin: 0 0 25px 195px
       white-space: nowrap
+      text-align: center
+      margin: 0 0 22px 0
     &-bottom
-      display: inline-block
-      font-family: $font-suisse-bold
-      font-size: 64px
-      line-height: 64px
-      letter-spacing: 0.04em
-      text-transform: uppercase
-      color: $blue
-      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-      padding: 14px 20px 12px
-      background: $magenta
-      transform: rotate(-5.59deg)
       position: relative
-      &::before
-        content: ''
-        position: absolute
-        top: -39px
-        left: 101px
-        width: 73px
-        height: 59px
-        transform: rotate(5.59deg)
-        background: url("../img/plus.svg") no-repeat 50% 0/contain
+      left: -53px
+      top: 3px
+      p
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        transform: rotate(-5.59deg)
+        &:first-child
+          margin: 0 0 35px 0
+          position: relative
+          z-index: 20
+          &::before
+            content: ''
+            position: absolute
+            background: url('../img/plus.svg') no-repeat 50% 0/contain
+            transform: rotate(5.59deg)
+            width: 77px
+            height: 76px
+            bottom: -57px
+            left: 233px
+            z-index: 20
+          .top
+            position: relative
+            left: 5px
+          .bottom
+            margin: -1px 0 0 -66px
+            position: relative
+            left: 5px
+        &:nth-child(2)
+          position: relative
+          left: 182px
+          top: -14px
+          .bottom
+            margin: -1px 0 0 78px
+            position: relative
+            left: -5px
+
+      .top
+        display: inline-block
+        padding: 0 20px
+        font-family: $font-suisse-bold
+        font-size: 64px
+        line-height: 83px
+        letter-spacing: 0.04em
+        text-transform: uppercase
+        color: $blue
+        background: $magenta
+      .bottom
+        display: inline-block
+        padding: 0 20px
+        font-family: $font-suisse-bold
+        font-size: 48px
+        line-height: 62px
+        letter-spacing: 0.04em
+        text-transform: uppercase
+        color: $blue
+        background: $magenta
+
+
+
 
 
 
